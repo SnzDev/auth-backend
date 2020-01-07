@@ -5,9 +5,8 @@ class User extends Model{
         super.init({
             name: DataTypes.STRING,
             email: DataTypes.STRING,
-            createdAt: DataTypes.DATE,
-            updatedAt: DataTypes.DATE,
-        });
+            password: DataTypes.STRING,
+        },{ sequelize });
     }
 }
 
