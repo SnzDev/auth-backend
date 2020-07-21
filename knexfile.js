@@ -9,6 +9,9 @@ module.exports = {
       user: 'root',
       password: '',
       database: 'auth-base'
+    },
+    migrations: {
+      directory: './src/database/migrations'
     }
   },
 

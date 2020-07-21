@@ -1,0 +1,11 @@
+POST http://127.0.0.1:3333/user
+Content-Type: application/json
+{
+    "name": "teste",
+    "email": "teste@gmail.com",
+    "password": "teste"
+}
+
+###
+
+GET 127.0.0.1:3333/users HTTP/1.1
