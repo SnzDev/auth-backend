@@ -13,6 +13,15 @@ module.exports = {
 
         console.log(response);
 
-        return res.json('IT WORKS!');
+        return res.json(response);
+    },
+    async show(req,res){
+        const {email, password} = req.body;
+        const response = await connection('users').select().where({email, password});
+
+        console.log(email)
+        console.log(password)
+        console.log(response);
+        return res.json(response);
     },
 }

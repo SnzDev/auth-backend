@@ -8,7 +8,8 @@ routes.get('/',(req,res) => {
 });
 
 routes.get('/users', userController.index);
-routes.post('/user', userController.store);
+routes.post('/users', userController.store);
+routes.post('/user', userController.show);
 
 
 module.exports = routes;
